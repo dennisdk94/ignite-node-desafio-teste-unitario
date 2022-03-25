@@ -14,13 +14,13 @@ interface IResponse {
   balance: number;
 }
 
-@injectable()
+// @injectable()
 export class GetBalanceUseCase {
   constructor(
-    @inject('StatementsRepository')
+    // @inject('StatementsRepository')
     private statementsRepository: IStatementsRepository,
 
-    @inject('UsersRepository')
+    // @inject('UsersRepository')
     private usersRepository: IUsersRepository,
   ) {}
 
